@@ -1,0 +1,6 @@
+---Pour insérer une réponse :
+UPDATE quiz SET answers='Se protéger et protéger les autres' WHERE user_id=1
+
+---Pour Afficher les formations qu'elles existent : 
+SELECT idUtilisateur,nom,prenom,nomFormation,date_debut,date_fin FROM utilisateur JOIN formation
+ON utilisateur.idUtilisateur = formation.user_id
